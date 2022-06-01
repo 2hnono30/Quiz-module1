@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function quiz1(a, b, c) {
+            let ptb2 = b * b - 4 * a * c;
+            if (a == 0) {
+                return ` phuong trinh co nghiem x= ${-c / b}`;
+            } else
+                if (ptb2 < 0) {
+                    return `phuong trinh vo nghiem`;
+                }
+            if (ptb2 > 0) {
+                return `phuong trinh co 2 nghiem x1=${-b + Math.sqrt(ptb2) / (2 * a)} nghiem x2 = ${-b - Math.sqrt(ptb2) / (2 * a)}`
+            }
+            if (ptb2 == 0) {
+                return `phuong trinh co nghiem kep x = ${-b / (2 * a)}`
+            }
+        }
+        
+let checkquiz1=quiz1(8,12,-20);
+        alert(checkquiz1);
+    </script>
+</body>
+
+</html>
